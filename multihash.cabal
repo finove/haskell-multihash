@@ -1,5 +1,5 @@
 name:                multihash
-version:             0.1.5
+version:             0.1.6
 synopsis:            Multihash library and CLI executable
 description:         Multihash is a protocol for encoding the hash algorithm
                      and digest length at the start of the digest.
@@ -32,7 +32,7 @@ library
   default-language:    Haskell2010
 
   build-depends: attoparsec        >= 0.12 && < 0.14
-               , base              >= 4.7  && < 4.11
+               , base              >= 4.7  && < 4.12
                -- , base32-bytestring >= 0.2  && < 0.3
                , base58-bytestring >= 0.1  && < 0.3
                , base64-bytestring >= 1.0  && < 1.1
@@ -49,7 +49,7 @@ executable multihash
   ghc-options:       -threaded -Wall -fwarn-tabs -funbox-strict-fields -O2 -fdicts-cheap
                      -fno-warn-orphans -fno-warn-unused-do-bind -rtsopts
 
-  build-depends: base                 >= 4.7  && < 4.11
+  build-depends: base                 >= 4.7  && < 4.12
                -- , base32-bytestring >= 0.2
                , base64-bytestring    >= 1.0  && < 1.1
                , base58-bytestring    >= 0.1  && < 0.3
